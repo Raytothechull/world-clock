@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World Clock</title>
+    <title>World Clock: What is your Time Zone?</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>What is your Time Zone?</h1>
+      <h1>World Clock 🌎</h1>
       <select>
         <option value="">Select a City...</option>
         <option value="">Las Vegas 🇺🇸</option>
@@ -16,14 +18,14 @@
         <option value="">Seoul 🇰🇷</option>
         <option value="">Zurich 🇨🇭</option>
       </select>
-      <div class="city">
+      <div class="city" id="las-vegas">
         <div>
           <h2>Las Vegas 🇺🇸</h2>
           <div class="date">July 7th, 2024</div>
         </div>
         <div class="time">5:51:48 <small>PM</small></div>
       </div>
-      <div class="city">
+      <div class="city" id="tokyo">
         <div>
           <h2>Tokyo 🇯🇵</h2>
           <div class="date">July 8th, 2024</div>
