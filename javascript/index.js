@@ -45,7 +45,8 @@ function updateCity(event) {
     "A"
   )}</small>
        </div>
-        </div> `;
+        </div>
+        <a href="/">Back to all cities</a> `;
 }
 
 setInterval(updateTime, 1000);
